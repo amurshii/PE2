@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="card">
+            <header class="card-header">
+                <h1>Personal Information</h1>
+                <p>Fill in the form to register</p>
+            </header>
+ 
+            <form action="" id="form">
+                <div class="field">
+                    <input type="text" id="name" name="name" placeholder=" " required>
+                    <label for="name">First Name</label>
+                </div>
+ 
+                <div class="field">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Gmail</label>
+                </div>
+ 
+                <div class="field">
+                    <input type="password" id="password" name="password" placeholder=" " required>
+                    <label for="password">Password</label>
+                </div>
+ 
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+ 
+    <!-- Спливаюче вікно (popup), спочатку приховане класом hidden -->
+    <div class="pop-up hidden">
+        <div class="pop-up-content">
+            <span class="close-button">&times;</span>
+            <h2>Success</h2>
+            <p>Registration successful!</p>
+            <div class="user-name"></div>
+            <button type="button" class="close">Close</button>
+        </div>
+    </div>
+ 
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
